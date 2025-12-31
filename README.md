@@ -129,8 +129,7 @@ python main.py --watch logs/ --threshold 2
 3. **Data Privacy:** Logs are sent to external cloud APIs (Google/OpenAI/Anthropic). This tool should not be used with logs containing PII (Personally Identifiable Information) or sensitive secrets without prior sanitization/redaction.
 
 
-4. 
-**Costs:** Continuous usage of "Sentinel Mode" with a low threshold (every 1 file) could incur significant API costs.
+4. **Costs:** Continuous usage of "Sentinel Mode" with a low threshold (every 1 file) could incur significant API costs.
 
 
 
@@ -141,10 +140,9 @@ Improvements that could be made if there were more time available:
 1. 
 **Local LLM Support:** Integrate Ollama or LocalAI to allow analysis of sensitive logs entirely offline, removing data privacy concerns.
 
+3. **RAG (Retrieval-Augmented Generation):** Implement a vector database (like ChromaDB) to store past log embeddings. This would allow the AI to reference historical anomalies and detect long-term patterns.
 
-2. **RAG (Retrieval-Augmented Generation):** Implement a vector database (like ChromaDB) to store past log embeddings. This would allow the AI to reference historical anomalies and detect long-term patterns.
+4. **SIEM Integration:** Add webhooks to forward the generated reports directly to monitoring dashboards.
 
+5. **Structured Output:** Force the LLM to output JSON instead of plain text to allow for automated parsing and triggering firewall rules based on the remediation advice. 
 
-3. 
-
-**SIEM Integration:** Add webhooks to forward the generated reports directly to monitoring dashboards.

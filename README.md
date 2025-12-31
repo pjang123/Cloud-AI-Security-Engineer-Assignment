@@ -4,7 +4,7 @@
 
 This tool is designed to automate the ingestion, analysis, and correlation of security artifacts. It moves beyond simple signature matching by utilizing LLMs to identify anomalous behavior, contextualize threats, and generate actionable remediation reports.
 
-##Features
+## Features
 
 * **Multiple Provider Support:** Automatically detects and switches between Google Gemini, OpenAI GPT-4, and Anthropic Claude based on the API key provided.
 
@@ -142,5 +142,6 @@ Improvements that could be made if there were more time available:
 4. **SIEM Integration:** Add webhooks to forward the generated reports directly to monitoring dashboards.
 
 5. **Structured Output:** Force the LLM to output JSON instead of plain text to allow for automated parsing and triggering firewall rules based on the remediation advice. 
+
 
 

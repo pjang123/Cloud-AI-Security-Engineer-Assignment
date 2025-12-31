@@ -1,0 +1,7 @@
+# Environmental Variables
+python-dotenv
+
+# AI Model SDKs
+google-genai
+openai
+anthropic

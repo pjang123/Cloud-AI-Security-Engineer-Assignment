@@ -6,8 +6,7 @@ This tool is designed to automate the ingestion, analysis, and correlation of se
 
 ##Features
 
-* 
-**Multiple Provider Support:** Automatically detects and switches between Google Gemini, OpenAI GPT-4, and Anthropic Claude based on the API key provided.
+* **Multiple Provider Support:** Automatically detects and switches between Google Gemini, OpenAI GPT-4, and Anthropic Claude based on the API key provided.
 
 
 * **Three Operational Modes:**
@@ -16,12 +15,10 @@ This tool is designed to automate the ingestion, analysis, and correlation of se
 * **Sentinel (Watch):** Real-time folder monitoring for continuous analysis.
 
 
-* 
-**Security First:** Includes input sanitization to prevent path traversal attacks and data minimization via smart truncation.
+* **Security First:** Includes input sanitization to prevent path traversal attacks and data minimization via smart truncation.
 
 
-* 
-**Purple Team Focused:** Generates reports that include both attack vector analysis and defensive remediation steps.
+* **Purple Team Focused:** Generates reports that include both attack vector analysis and defensive remediation steps.
 
 
 
@@ -145,4 +142,5 @@ Improvements that could be made if there were more time available:
 4. **SIEM Integration:** Add webhooks to forward the generated reports directly to monitoring dashboards.
 
 5. **Structured Output:** Force the LLM to output JSON instead of plain text to allow for automated parsing and triggering firewall rules based on the remediation advice. 
+
 

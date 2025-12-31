@@ -134,14 +134,14 @@ python main.py --watch logs/ --threshold 2
 
 Improvements that could be made if there were more time available:
 
-1. 
-**Local LLM Support:** Integrate Ollama or LocalAI to allow analysis of sensitive logs entirely offline, removing data privacy concerns.
+1. **Local LLM Support:** Integrate Ollama or LocalAI to allow analysis of sensitive logs entirely offline, removing data privacy concerns.
 
-3. **RAG (Retrieval-Augmented Generation):** Implement a vector database (like ChromaDB) to store past log embeddings. This would allow the AI to reference historical anomalies and detect long-term patterns.
+2. **RAG (Retrieval-Augmented Generation):** Implement a vector database (like ChromaDB) to store past log embeddings. This would allow the AI to reference historical anomalies and detect long-term patterns.
 
-4. **SIEM Integration:** Add webhooks to forward the generated reports directly to monitoring dashboards.
+3. **SIEM Integration:** Add webhooks to forward the generated reports directly to monitoring dashboards.
 
-5. **Structured Output:** Force the LLM to output JSON instead of plain text to allow for automated parsing and triggering firewall rules based on the remediation advice. 
+4. **Structured Output:** Force the LLM to output JSON instead of plain text to allow for automated parsing and triggering firewall rules based on the remediation advice. 
+
 
 
 

@@ -1,14 +1,10 @@
-Yes, I found the "Bespin Assignment README" in your drive. Here is the content formatted as a GitHub `README.md` file.
-
----
-
-# 🛡️ AI Security Analyst Assistant
+# AI Security Analyst Assistant
 
 **Bespin Assignment**
 
 This tool is designed to automate the ingestion, analysis, and correlation of security artifacts. It moves beyond simple signature matching by utilizing LLMs to identify anomalous behavior, contextualize threats, and generate actionable remediation reports.
 
-## 📋 Features
+##Features
 
 * 
 **Multiple Provider Support:** Automatically detects and switches between Google Gemini, OpenAI GPT-4, and Anthropic Claude based on the API key provided.
@@ -29,7 +25,7 @@ This tool is designed to automate the ingestion, analysis, and correlation of se
 
 
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Prerequisites
 
@@ -80,7 +76,7 @@ python main.py logs/server.log --key "sk-proj-12345..."
 
 ```
 
-## 🚀 How to Run
+## How to Run
 
 ### Mode 1: Standard Analysis (Single/Multi File)
 
@@ -110,7 +106,7 @@ python main.py --watch logs/ --threshold 2
 
 ```
 
-## 🚩 Command Flags
+## Command Flags
 
 | Flag | Description |
 | --- | --- |
@@ -122,7 +118,7 @@ python main.py --watch logs/ --threshold 2
 | `--key` | Manual Override. Force use of a specific API key (overrides `.env`). |
 | `--watch` | Sentinel Mode. Continuously monitors a folder for new files. |
 
-## ⚠️ Known Weaknesses & Constraints
+## Known Weaknesses & Constraints
 
 1. **Token Limits:** While "Smart Truncation" (`--lines`) is implemented, extremely large log files (larger than 1GB) cannot be ingested in their entirety without splitting. The tool currently overcomes this by prioritizing the most recent data.
 
@@ -138,7 +134,7 @@ python main.py --watch logs/ --threshold 2
 
 
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 Improvements that could be made if there were more time available:
 
@@ -150,4 +146,5 @@ Improvements that could be made if there were more time available:
 
 
 3. 
+
 **SIEM Integration:** Add webhooks to forward the generated reports directly to monitoring dashboards.
